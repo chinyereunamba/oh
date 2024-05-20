@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "NeueMontreal";
+    src: local("NeueMontreal-Regular.otf"),
+        url("./assets/fonts/NeueMontreal/NeueMontreal-Regular.otf");
+}
+@font-face {
+    font-family: "NeueMontreal";
+    src: local("NeueMontreal-Medium.otf"),
+        url("./assets/fonts/NeueMontreal/NeueMontreal-Medium.otf");
+}
+
+:root {
+    font-family: "NeueMontreal";
+    line-height: 1.5;
+    font-weight: 400;
+
+    --background: rgb(255, 255, 255);
+    --secondary: rgb(130, 130, 130);
+    --accent: rgba(232, 229, 228, 0.5);
+    --accent-two: rgb(130, 130, 130, 0.5);
+    --text: rgb(0, 0, 0);
+    --font-sm: 0.9rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: var(--background);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 86px;
+}
+
+h3 {
+    font-size: 38px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+li {
+    list-style: none;
+}
