@@ -4,13 +4,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 40px;
+    padding: 30px 40px;
     position: sticky;
     top: 0;
 }
 
 .navbar .navbar__navLink {
-    width: 300px;
+    width: 290px;
     display: flex;
     justify-content: space-between;
     padding: 4px;
@@ -23,7 +23,7 @@
 .navbar .navbar__navLink a {
     font-weight: 600;
     font-size: 0.9rem;
-    padding: 10px 12px;
+    padding: 9px 12px;
     width: 100px;
     border-radius: 100px;
     text-align: center;
@@ -48,19 +48,20 @@
 .contact .contact__contact_content {
     display: block;
     text-align: center;
-    width: 660px;
+    max-width: 660px;
+    width: 100%;
     margin: auto;
 }
 
-.contact .contact__contact_content h3 {
-    line-height: 0.2;
-}
+/* .contact .contact__contact_content h3 {
+    line-height: 0.2; 
+}*/
 
-.contact .contact__contact_content h3:last-child a {
+.contact .contact__contact_content h2:last-child a {
     color: var(--secondary);
 }
 
-.contact .contact__contact_content h3:last-child a:hover {
+.contact .contact__contact_content h2:last-child a:hover {
     color: var(--accent-two);
 }
 

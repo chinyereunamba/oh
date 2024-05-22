@@ -1,16 +1,17 @@
 @font-face {
-    font-family: "NeueMontreal";
+    font-family: "Neue Montreal Regular";
     src: local("NeueMontreal-Regular.otf"),
         url("./assets/fonts/NeueMontreal/NeueMontreal-Regular.otf");
 }
 @font-face {
-    font-family: "NeueMontreal";
+    font-family: "Neue Montreal Medium";
     src: local("NeueMontreal-Medium.otf"),
         url("./assets/fonts/NeueMontreal/NeueMontreal-Medium.otf");
 }
 
 :root {
-    font-family: "NeueMontreal";
+    font-family: "Neue Montreal Regular", serif;
+    --font-f-bolder: "Neue Montreal Medium", serif;
     line-height: 1.5;
     font-weight: 400;
 
@@ -18,6 +19,7 @@
     --secondary: rgb(130, 130, 130);
     --accent: rgba(232, 229, 228, 0.5);
     --accent-two: rgb(130, 130, 130, 0.5);
+    --accent-three: #828282;
     --text: rgb(0, 0, 0);
     --font-sm: 0.9rem;
     font-synthesis: none;
@@ -31,12 +33,14 @@ body {
 }
 
 h1 {
-    font-weight: 600;
+    font-family: var(--font-f-bolder);
+    font-weight: 400;
     font-size: 70px;
     line-height: 86px;
 }
 
-h3 {
+h2 {
+    font-family: var(--font-f-bolder);
     font-size: 38px;
     font-weight: 400;
 }

@@ -1,0 +1,83 @@
+.profile__intro {
+    height: 70vh;
+    display: grid;
+    place-content: center;
+    padding: 20px 40px;
+}
+
+.profile__intro h1 {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+.title {
+    padding: 10px;
+}
+.title p {
+    padding: 8px 12px;
+    border-radius: 100px;
+    background: var(--accent);
+    font-size: 14px;
+    line-height: 1.2em;
+    width: auto;
+}
+
+.about {
+    padding: 0 40px 140px 40px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+}
+
+.about h2,
+.experience h2 {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.experience .experience__title {
+    padding: 80px 40px 40px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: 20px;
+}
+
+.experience .experience__jobs_done {
+    display: grid;
+    flex: 0 0 auto;
+    gap: 10px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    padding: 40px;
+}
+
+.experience .experience__jobs_done .work {
+    display: grid;
+    padding: 40px;
+    place-items: center;
+    gap: 15px;
+}
+
+.experience .experience__jobs_done .work .work__job_duration,
+.experience .experience__jobs_done .work .work__position {
+    font-size: 14px;
+    line-height: 1.2em;
+    color: var(--accent-three);
+}
+
+.experience .experience__jobs_done .work .work__firm_name {
+    font-size: 22px;
+    line-height: 1.4em;
+    font-family: var(--font-f-bolder);
+}
+
+.experience .experience__jobs_done .work .work__job_title {
+    font-size: 14px;
+    line-height: 1.2em;
+    padding: 8px 12px;
+    background: var(--accent);
+    border-radius: 100px;
+}

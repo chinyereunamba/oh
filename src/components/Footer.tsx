@@ -3,7 +3,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div>
-                <p>&copy; Chinyere Unamba 2023</p>
+                <p>&copy; Chinyere Unamba 2024</p>
             </div>
             <div className="footer__footer_btn">shop</div>
             <ul className="footer__footer_links">
