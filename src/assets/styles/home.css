@@ -4,7 +4,7 @@
     padding: 40px;
     display: flex;
     place-content: center flex-start;
-    height: min-content;
+    height: 70vh;
     overflow: hidden;
     flex: 0 0 auto;
     flex-flow: column;
@@ -59,4 +59,77 @@
         font-size: 36px;
         line-height: 1.2;
     }
+}
+
+.works {
+    display: flex;
+    place-content: center flex-start;
+    flex-flow: column;
+    padding: 40px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.works > div {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+}
+
+.works .work {
+    position: relative;
+    flex: 1 0 0;
+    aspect-ratio: 1.3 / 1;
+
+}
+
+.works .work .work__work_img{
+    flex: 1 0 0px;
+}
+
+.works .work .work__work_img img {
+    aspect-ratio: 1.3 / 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.works .work .work__work_info {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.work .work__work_info .work__work_info__work_title{
+    color: var(--background);
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+.works .work .work__work_info .work__work_info__work_icon {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background: var(--text);
+    border-radius: 50%;
+    position: relative;
+}
+
+.works .work .work__work_info .work__work_info__work_icon.available {
+    background: var(--background);
+}
+
+.work__work_info .work__work_info__work_icon svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
