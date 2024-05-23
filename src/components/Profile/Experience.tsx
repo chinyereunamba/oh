@@ -17,22 +17,22 @@ export default function Experience() {
                     position="Freelance Designer"
                 />
                 <Work
-                    duration="2017 — Present"
+                    duration="2016 — 2017"
                     firm="OH.STUDIO"
-                    workType="Director"
+                    workType="Freelancer"
                     position="Freelance Designer"
                 />
                 <Work
-                    duration="2017 — Present"
-                    firm="OH.STUDIO"
-                    workType="Director"
-                    position="Freelance Designer"
+                    duration="2015 — 2016"
+                    firm="Lovely World"
+                    workType="Permanent"
+                    position="Senior Designer"
                 />
                 <Work
                     duration="2017 — Present"
-                    firm="OH.STUDIO"
-                    workType="Director"
-                    position="Freelance Designer"
+                    firm="Lovely World"
+                    workType="Permanent"
+                    position="Junior Designer"
                 />
             </div>
         </section>

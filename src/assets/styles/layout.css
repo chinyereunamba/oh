@@ -24,11 +24,12 @@
 
 .navbar .navbar__navLink a {
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--font-sm);
     padding: 10px 12px;
     width: 100px;
     border-radius: 100px;
     text-align: center;
+    transition: color .5s;
 }
 
 .navbar .navbar__navLink a.active {
@@ -96,6 +97,10 @@
 .footer .footer__footer_links {
     display: flex;
     gap: 1rem;
+}
+
+.footer .footer__footer_links a{
+    transition: color .5s;
 }
 
 .footer .footer__footer_links a:hover {

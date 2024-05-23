@@ -1,14 +1,17 @@
 import "../../assets/styles/contact.css"
+import { AnimatePresence, motion } from "framer-motion"
 
 export default function Contact() {
     return (
         <section className="contact">
-            <div className="contact__contact_content">
-                <h1>Let's work together.</h1>
-                <h1>
-                    <a href="mailto:cunamba2@gmail.com">Get in touch.</a>
-                </h1>
-            </div>
+            <AnimatePresence>
+                <motion.div className="contact__contact_content">
+                    <motion.h1>Let's work together.</motion.h1>
+                    <motion.h1>
+                        <a href="mailto:cunamba2@gmail.com">Get in touch.</a>
+                    </motion.h1>
+                </motion.div>
+            </AnimatePresence>
         </section>
     )
 }

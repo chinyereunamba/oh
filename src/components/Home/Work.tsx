@@ -21,14 +21,16 @@ function Work({ img, workName, available, to }: WorkProps) {
             <div className="work__work_img">
                 <img src={img} alt={workName} />
             </div>
-            <div className="work__work_info">
-                <p className="work__work_info__work_title">{workName}</p>
-                <div
-                    className={`work__work_info__work_icon ${
-                        available && "available"
-                    }`}
-                >
-                    {available ? <Arrow /> : <Locked />}
+            <div className="work__work_img_overlay">
+                <div className="work__work_info">
+                    <p className="work__work_info__work_title">{workName}</p>
+                    <div
+                        className={`work__work_info__work_icon ${
+                            available && "available"
+                        }`}
+                    >
+                        {available ? <Arrow /> : <Locked />}
+                    </div>
                 </div>
             </div>
         </Link>
@@ -43,8 +45,16 @@ export default function Works() {
                 <Work img={imgTwo} workName="Test case two" available={false} />
             </div>
             <div>
-                <Work img={imgThree} workName="Test case three" available={false} />
-                <Work img={imgFour} workName="Test case four" available={true} />
+                <Work
+                    img={imgThree}
+                    workName="Test case three"
+                    available={false}
+                />
+                <Work
+                    img={imgFour}
+                    workName="Test case four"
+                    available={true}
+                />
             </div>
         </section>
     )
