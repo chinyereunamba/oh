@@ -1,0 +1,25 @@
+.contact {
+    max-width: 1400px;
+    height: calc(100dvh - 170.6px);
+    width: 100%;
+    display: grid;
+    place-content: center;
+    padding: 30px;
+    margin: auto;
+}
+
+.contact .contact__contact_content {
+    display: block;
+    text-align: center;
+    max-width: 660px;
+    width: 100%;
+    margin: auto;
+}
+
+.contact .contact__contact_content h1:last-child a {
+    color: var(--secondary);
+}
+
+.contact .contact__contact_content h1:last-child a:hover {
+    color: var(--accent-two);
+}
